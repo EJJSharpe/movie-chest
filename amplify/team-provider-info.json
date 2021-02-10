@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-moviechest-dev-192344-authRole",
+      "UnauthRoleArn": "arn:aws:iam::902543001498:role/amplify-moviechest-dev-192344-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::902543001498:role/amplify-moviechest-dev-192344-authRole",
+      "Region": "eu-west-2",
+      "DeploymentBucketName": "amplify-moviechest-dev-192344-deployment",
+      "UnauthRoleName": "amplify-moviechest-dev-192344-unauthRole",
+      "StackName": "amplify-moviechest-dev-192344",
+      "StackId": "arn:aws:cloudformation:eu-west-2:902543001498:stack/amplify-moviechest-dev-192344/7ec72ac0-6bd5-11eb-ad1d-023a5acac3f0",
+      "AmplifyAppId": "dcnvs833znabp"
+    },
+    "categories": {
+      "auth": {
+        "moviechest21abbd69": {}
+      }
+    }
+  }
+}
