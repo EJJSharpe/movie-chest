@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { navigate } from '@reach/router'
+import styles from '../styles/SearchBar.module.scss'
 
 const SearchBar = () => {
     const [input, setInput] = useState('')
@@ -9,8 +10,8 @@ const SearchBar = () => {
     }
 
     return (
-        <form onSubmit={handleSearch}>
-            <input type='text' onChange={(e) => { setInput(e.target.value) }} value={input} />
+        <form onSubmit={handleSearch} title='form'>
+            <input className={styles.searchInput} type='text' onChange={(e) => { setInput(e.target.value) }} value={input} title='searchinput' />
         </form>
     );
 };
