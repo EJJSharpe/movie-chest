@@ -1,0 +1,11 @@
+{
+  "AppSyncApiName": "moviechest",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authmoviechest21abbd69",
+      "Outputs.UserPoolId"
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+type Film @model @auth(rules: [{allow: owner}]){
+  id: ID!
+  title: String!
+  year: String!
+  poster: String
+  owner: String!
+  rating: Int
+}

@@ -1,0 +1,33 @@
+.container{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    background-color: #131921;
+
+    h1{
+        padding: 0;
+        color: #ffa500;
+        font-size: 3rem;
+
+    }
+}
+
+.spaceholder{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.icon{
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 3rem;
+    height: 3rem;
+    margin-left: 0.5rem;
+    border-radius: 2rem;
+
+    
+}
