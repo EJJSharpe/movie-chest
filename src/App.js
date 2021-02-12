@@ -18,7 +18,7 @@ function App() {
     <div className="App">
       <Nav />
       <Router>
-        <MovieList path='/' />
+        <MovieList path='/*' />
         <MovieList path='/:searchTerm' />
         <MyMovies path='/mymovies' />
       </Router>

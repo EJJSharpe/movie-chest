@@ -35,13 +35,14 @@ export const fetchMyMovies = async () => {
     try {
         const { data } = await API.graphql(graphqlOperation(listFilms))
         const movieList = data.listFilms.items;
+        console.log(movieList)
         return movieList;
     } catch (err) {
         console.log(err)
     }
 }
 
-export const addMyMovie = async (title, year, poster, id, rating) => {
+export const addMyMovie = async (title, year, poster, imdbID, rating) => {
     try {
         const userdata = await Auth.currentUserInfo()
         const username = userdata.username
@@ -49,7 +50,7 @@ export const addMyMovie = async (title, year, poster, id, rating) => {
             input:
             {
                 title,
-                id,
+                imdbID,
                 year,
                 poster,
                 rating,

@@ -5,6 +5,7 @@ export const getFilm = /* GraphQL */ `
   query GetFilm($id: ID!) {
     getFilm(id: $id) {
       id
+      imdbID
       title
       year
       poster
@@ -24,6 +25,7 @@ export const listFilms = /* GraphQL */ `
     listFilms(filter: $filter, limit: $limit, nextToken: $nextToken) {
       items {
         id
+        imdbID
         title
         year
         poster

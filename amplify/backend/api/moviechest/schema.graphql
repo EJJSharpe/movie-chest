@@ -1,5 +1,6 @@
 type Film @model @auth(rules: [{allow: owner}]){
   id: ID!
+  imdbID: String!
   title: String!
   year: String!
   poster: String

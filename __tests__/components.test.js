@@ -2,7 +2,6 @@ import React from 'react';
 import Nav from '../src/components/Nav'
 import SearchBar from '../src/components/SearchBar'
 import { render, fireEvent } from '@testing-library/react'
-import StarRating from '../src/components/StarRating';
 
 describe('Nav', () => {
     it('renders the sign out button', () => {
