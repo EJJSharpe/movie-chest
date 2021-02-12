@@ -14,7 +14,7 @@ const MovieList = ({ searchTerm }) => {
             setMovies(loadedFilms)
         }
         loadContent()
-    })
+    }, [searchTerm])
 
     return (
         <div className={styles.outerContainer}>
