@@ -8,7 +8,7 @@ import { Auth } from 'aws-amplify';
 //requesting omdb api functions
 export const getMovies = async (title) => {
     try {
-        const { data } = await axios.get('http://www.omdbapi.com/?apikey=ad06d96a', {
+        const { data } = await axios.get('https://www.omdbapi.com/?apikey=ad06d96a', {
             params: { s: title }
         })
         return data.Search;
@@ -19,7 +19,7 @@ export const getMovies = async (title) => {
 
 export const getMovieByID = async (id) => {
     try {
-        const { data } = await axios.get('http://www.omdbapi.com/?apikey=ad06d96a', {
+        const { data } = await axios.get('https://www.omdbapi.com/?apikey=ad06d96a', {
             params: { i: id }
         })
         return data;
